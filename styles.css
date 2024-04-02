@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Brim Narrow Combined 2';
+    src: url('BrimNarrow-Combined2.eot');
+    src: local('BrimNarrow-Combined2'),
+        url('typos/BrimNarrow-Combined2.eot') format('embedded-opentype'),
+        url('typos/BrimNarrow-Combined2.woff2') format('woff2'),
+        url('typos/BrimNarrow-Combined2.woff') format('woff'),
+        url('typos/BrimNarrow-Combined2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hertical Sans Smooth";
+    src: url("typos/Hertical Sans Smooth.ttf") format("truetype");
+    src: url("typos/Hertical Sans Smooth.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    font-family:"Brim Narrow Combined 2";
+    background-image: url("img/fondo.png");
+    font-size: 19px;
+    margin: 0;
+    
+}
+
+h2{
+font-size: 2em;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la fila en la página */
+}
+
+.container {
+    width: 22%; /* Ancho de cada tarjeta */
+    margin: 1%; /* Centra horizontalmente */
+}
+
+
+
+ 
+ .cta {
+    background: #333;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    
+    &:hover {
+       
+       img {
+          top: -10%;
+          filter: brightness(40%);
+       }
+       
+       .text {
+          bottom: 0;
+       }
+    }
+    
+    img {
+       bottom: 0;
+       filter: brightness(100%);
+       left: 0;
+       position: absolute;
+       right: 0;
+       top: 0;
+       transition: 0.5s ease-in-out;
+       width: 100%;
+    }
+    
+    .text {
+       bottom: -18%;
+       padding: 10px;
+       position: absolute;
+       transition: 0.5s ease-in-out;
+ 
+       h3 {
+          font-family: "Brim Narrow Combined 2";
+          color: #fff;
+          display: inline-block;
+          margin-bottom: 5px;
+          position: relative;
+       }
+       
+       p {
+        font-family: "Hertical Sans Smooth";
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+ }
+
+.container2{
+display: flex;
+justify-content: flex-end;
+}
+
+.container0{
+display: flex;
+justify-content: flex-start;
+width: 80%;
+text-align: left;
+}
+
+.container0 p{
+font-family:"Hertical Sans Smooth" ;
+text-align: justify;
+}
+
+
+/* META */
+
+/* Container */
+.container3 {
+    max-width: 1200px;
+    margin: 10%;
+    padding: 0 20px;
+    }
+
+section {
+    font-family: "Hertical Sans Smooth" ;
+    margin-bottom: 30px;
+    }
+
+    #porcentaje{
+        font-family:"Brim Narrow Combined 2";
+        font-size: 3.5em;
+        }
+    
+    /* Styling progress bar */
+    #progressBar {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    
+    #progress {
+    background-color: #333;
+    height: 100%;
+    width: 50%; /* Change this value dynamically using JavaScript */
+    }
+
+    #footer{
+    font-size: 15px;
+    }
+    
+    #subtitulo{
+    font-family:"Brim Narrow Combined 2";
+    }
+    /* Button */
+    .contribute-btn {
+    font-family: "Hertical Sans Smooth" ;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .contribute-btn:hover {
+    color: #333;
+    background-color: #aaa;
+    }
+    
+
+
+    .modal {
+        font-family: "Hertical Sans Smooth";
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        padding: 50px;
+        border: 1px solid #888;
+        border-radius: 5px;
+        max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+        max-height: 100%; /* Ajusta la altura máxima según sea necesario */
+        overflow-y: auto; /* Activa el desplazamiento vertical cuando el contenido es demasiado largo */}
+    
+
+    
+    .modal-content h2{
+    font-family:"Brim Narrow Combined 2";
+    font-size: 2em;
+    }
+
+    .modal-content h3{
+        font-family: .4em;
+        }
+
+    .modal-content li, a, label, p{
+    font-size: .85em;
+    }
+
+    .modal-content label{
+    font-size:.9em;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .no-scroll {
+      overflow: hidden;
+  }
+
+  #botonformulario{
+  font-family: "Hertical Sans Smooth" ;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: .8em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  #botonformulario:hover{
+  background-color: #aaa;
+  color: #333;
+  }
+
+  #emailBtn{
+    font-family: "Hertical Sans Smooth" ;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: .8em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #emailBtn:hover{
+    background-color: #aaa;
+    color: #333;
+  }
+
+  .OKOK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .OKOK img{
+
+    margin: 0 55px;
+  }
